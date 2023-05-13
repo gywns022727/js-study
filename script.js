@@ -1,3 +1,9 @@
+const enter = addEventListener("keypress", (e) => {
+  if (e.key == "Enter") {
+    check();
+  }
+});
+
 const check = () => {
   const form = document.forms["form"];
 
@@ -13,7 +19,7 @@ const check = () => {
     alert("비밀번호를 다시 입력해주세요.");
     form["passwordCheck"].focus();
     return false;
-  } else if (!form["password"].value == !form["passwordCheck"].value) {
+  } else if (form["password"].value !== form["passwordCheck"].value) {
     alert("비밀번호가 일치하지 않습니다.");
     form["passwordCheck"].focus();
     return false;
