@@ -1,1 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+.wrap {
+  width: 250px;
+  margin: 0 auto;
+}
+
+.error {
+  display: none;
+  padding-top: 5px;
+  color: red;
+  font-size: 13px;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form > label {
+  padding: 20px;
+}
+
+.form > label > input {
+  width: 200px;
+  height: 30px;
+  padding-left: 5px;
+}
+
+.form > label > p {
+  padding-bottom: 5px;
+}
+
+button {
+  margin-top: 10px;
+  width: 200px;
+}

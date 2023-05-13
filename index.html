@@ -11,7 +11,34 @@
 </head>
 
 <body>
+    <div class="wrap">
+        <form name="form" onsubmit="return check()" class="form">
+            <label>
+                <p>아이디</p>
+                <input type="text" name="id" autocomplete="off" placeholder="아이디를 입력해주세요.">
+                <div class="error" id="iError">아이디를 입력해주세요.</div>
+            </label>
+            <label>
+                <p>비밀번호</p>
+                <input type="password" name="password" placeholder="비밀번호를 입력해주세요.">
+                <div class="error" id="pError">비밀번호를 입력해주세요.</div>
 
+            </label>
+            <label>
+                <p>비밀번호 확인</p>
+                <input type="password" name="passwordCheck" placeholder="비밀번호를 다시 입력해주세요.">
+                <div class="error" id="pcError">비밀번호를 입력해주세요.</div>
+            </label>
+            <label>
+                <p>날짜</p>
+                <input type="date" id="toDay">
+            </label>
+            <label>
+                <input type="submit" value="회원가입">
+                <button class="again">다시쓰기</button>
+            </label>
+        </form>
+    </div>
 </body>
 
 </html>
